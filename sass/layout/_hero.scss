@@ -1,0 +1,114 @@
+.hero {
+    background-color: #C4C4C4;
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/bg-image.jpg);
+    background-size: cover;
+
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 1600px;
+    padding-top: 200px;
+    padding-bottom: 200px;
+    text-align: center;
+}
+
+.hero__title {
+    margin-top: 0;
+    margin-bottom: 30px;
+
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.hero__modal-btn {
+    @extend %modal-btn;
+}
+
+// .hero {
+//     background-color: #C4C4C4;
+//     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/bg-mobile.jpg);
+//     background-size: cover;
+
+//     margin-right: auto;
+//     margin-left: auto;
+//     max-width: 480px;
+//     height: 400px;
+//     padding: 118px 60px;
+//     text-align: center;
+// }
+
+// @media (min-device-pixel-ratio: 2),
+//     (-webkit-min-device-pixel-ratio: 2),
+//     (min-resolution: 192dpi),
+//     (min-resolution: 2dppx) {
+//         .hero {
+//             background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/bg-mobile@2x.jpg);
+//             background-size: cover;
+//         }
+// }
+
+// @media screen and (min-width:481px) {
+//     .hero {
+//         background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/bg-tablet.jpg);
+//         max-width: 768px;
+//         background-size: cover;
+//     }
+
+//     @media (min-device-pixel-ratio: 2),
+//     (-webkit-min-device-pixel-ratio: 2),
+//     (min-resolution: 192dpi),
+//     (min-resolution: 2dppx) {
+//         .hero {
+//             background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/bg-tablet@2x.jpg);
+            
+//         }
+//     }
+// }
+
+// @media screen and (min-width:769px) {
+//     .hero {
+//         background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/bg-desktop.jpg);
+//         max-width: 1600px;
+//         background-size: cover;
+//     }
+// }
+
+// .hero__title {
+//     font-weight: 900;
+//     font-size: 26px;
+//     line-height: 1.61;
+//     letter-spacing: 0.06em;
+//     text-transform: uppercase;
+    
+//     color: #FFFFFF;
+// } 
+// .hero {
+//     background-color: #C4C4C4;
+//     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/bg-image.jpg);
+//     background-size: cover;
+
+//     margin-right: auto;
+//     margin-left: auto;
+//     max-width: 1600px;
+//     padding-top: 200px;
+//     padding-bottom: 200px;
+// }
+
+// .hero__title {
+//     margin-top: 0;
+//     margin-bottom: 30px;
+
+//     font-weight: 900;
+//     font-size: 44px;
+//     line-height: 1.36;
+//     letter-spacing: 0.06em;
+//     text-transform: uppercase;
+//     color: #FFFFFF;
+// }
+
+// .hero__modal-btn {
+//     @extend %modal-btn;
+// }
