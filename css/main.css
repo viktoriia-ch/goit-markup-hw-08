@@ -1084,6 +1084,12 @@ img {
   display: flex;
 }
 
+@media screen and (max-width: 768px) {
+  .footer__field {
+    max-width: 100%;
+  }
+}
+
 @media screen and (min-width: 768px) {
   .footer__container {
     display: flex;
