@@ -6,11 +6,6 @@
     margin: 15px;
 }
 
-.exemples__wrapper {
-    position: relative;
-    overflow: hidden;
-}
-
 .exemples__link {
     display: block;
 
@@ -20,6 +15,11 @@
     &:focus {
         box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
     } 
+}
+
+.exemples__wrapper {
+    position: relative;
+    overflow: hidden;
 }
 
 .exemples__overlay {
@@ -67,6 +67,19 @@
     letter-spacing: 0.03em;
 }
 
-// .exemples__list display: 
-// flex;
-//     flex-wrap: wrap;
+@media screen and (min-width:768px) {
+    .exemples__list {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .exemples__item {
+        width: calc((100% - 4 * 15px) / 2);
+    }
+}
+
+@media screen and (min-width:1200px) {
+    .exemples__item {
+        width: calc((100% - 6 * 15px) / 3);
+    }
+}
