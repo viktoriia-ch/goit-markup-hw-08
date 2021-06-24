@@ -20,7 +20,7 @@
     <header class="header">
         <div class="header__container container">
             <nav class="header__nav">
-                <a class="logo link" lang="en" href="./index.html"> 
+                <a class="logo header__logo link" lang="en" href="./index.html"> 
                     <span class="logo__accent">Web</span>Studio
                 </a>
 
@@ -187,17 +187,17 @@
                 <h2 class="title">Чем мы занимаемся</h2>
                 <ul class="about__list list">
                     <li class="about__item">
-                        <img class="about__img" src="./images/job/img.jpg" alt="десктопные устройства" width="370" height="294">
+                        <img class="about__img" srcset="./images/about/box-1.jpg 1x, ./images/about/box-1@2x.jpg 2x" src="./images/about/box-1.jpg" alt="десктопные устройства" width="370" height="294">
                         <p class="about__description">Десктопные приложения</p>
                     </li>
 
                     <li class="about__item">
-                        <img class="about__img" src="./images/job/img-1.jpg" alt="мобильное устройство" width="370" height="294">
+                        <img class="about__img" srcset="./images/about/box-2.jpg 1x, ./images/about/box-2@2x.jpg 2x" src="./images/about/box-2.jpg" alt="мобильное устройство" width="370" height="294">
                         <p class="about__description">Мобильные приложения</p>
                     </li>
 
                     <li class="about__item">
-                        <img class="about__img" src="./images/job/img-2.jpg" alt="усторойство с гаммой цветов" width="370" height="294">
+                        <img class="about__img" srcset="./images/about/box-3.jpg 1x, ./images/about/box-3@2x.jpg 2x" src="./images/about/box-3.jpg" alt="усторойство с гаммой цветов" width="370" height="294">
                         <p class="about__description">Дизайнерские решения</p>
                     </li>
                 </ul>
@@ -213,16 +213,16 @@
                     <li class="team__item">
 
                         <picture>
-                            <source media="(min-width:1200)" srcset="./images/teams/igor-desktop.webp 1x, ./images/teams/igor-desktop@2x.webp 2x" type="image/webp">
-                            <source media="(min-width:1200)" srcset="./images/teams/igor-desktop.jpg 1x, ./images/teams/igor-desktop@2x.jpg 2x">
+                            <source media="(min-width:1200px)" srcset="./images/teams/igor-desktop.webp 1x, ./images/teams/igor-desktop@2x.webp 2x, ./images/teams/igor-desktop@3x.webp 3x" type="image/webp">
+                            <source media="(min-width:1200px)" srcset="./images/teams/igor-desktop.jpg 1x, ./images/teams/igor-desktop@2x.jpg 2x, ./images/teams/igor-desktop@3x.jpg 3x">
 
-                            <source media="(min-width:768)" srcset="./images/teams/igor-tablet.webp 1x, ./images/teams/igor-tablet@2x.webp 2x" type="image/webp">
-                            <source media="(min-width:768)" srcset="./images/teams/igor-tablet.jpg 1x, ./images/teams/igor-tablet@2x.jpg 2x">
+                            <source media="(min-width:768px)" srcset="./images/teams/igor-tablet.webp 1x, ./images/teams/igor-tablet@2x.webp 2x" type="image/webp">
+                            <source media="(min-width:768px)" srcset="./images/teams/igor-tablet.jpg 1x, ./images/teams/igor-tablet@2x.jpg 2x">
 
-                            <source media="(max-width:767)" srcset="./images/teams/igor-mobile.webp" type="image/webp">
-                            <source media="(max-width:767)" srcset="./images/teams/igor-mobile.jpg">
-                            
-                            <img class="team__img" src="./images/teams/igor-mobile.jpg" alt="член нашей команды">
+                            <source media="(max-width:767px)" srcset="./images/teams/igor-mobile.webp 1x, ./images/teams/igor-mobile@2x.webp 2x" type="image/webp">
+                            <source media="(max-width:767px)" srcset="./images/teams/igor-mobile.jpg 1x, ./images/teams/igor-mobile@2x.jpg 2x">
+
+                            <img class="team__img" src="#" alt="член нашей команды">
                         </picture>
 
                         <div class="team__container">
@@ -268,8 +268,15 @@
                     <li class="team__item">
 
                         <picture>
-                            <source srcset="./images/teams/olga-desktop.jpg 1x, ./images/teams/olga-desktop@2x 2x.jpg" media="(min-width:1200)" type="image/jpeg" />
-                            <source srcset="./images/teams/olga-tablet.jpg 1x, ./images/teams/olga-tablet@2x 2x.jpg" media="(min-width:768)" type="image/jpeg" />
+                            <source media="(min-width:1200px)" srcset="./images/teams/olga-desktop.webp 1x, ./images/teams/olga-desktop@2x.webp 2x, ./images/teams/olga-desktop@3x.webp 3x" type="image/webp">
+                            <source media="(min-width:1200px)" srcset="./images/teams/olga-desktop.jpg 1x, ./images/teams/olga-desktop@2x.jpg 2x, ./images/teams/olga-desktop@3x.jpg 3x">
+
+                            <source media="(min-width:768px)" srcset="./images/teams/olga-tablet.webp 1x, ./images/teams/olga-tablet@2x.webp 2x" type="image/webp">
+                            <source media="(min-width:768px)" srcset="./images/teams/olga-tablet.jpg 1x, ./images/teams/olga-tablet@2x.jpg 2x">
+
+                            <source media="(max-width:767px)" srcset="./images/teams/olga-mobile.webp 1x, ./images/teams/olga-mobile@2x.webp 2x" type="image/webp">
+                            <source media="(max-width:767px)" srcset="./images/teams/olga-mobile.jpg 1x, ./images/teams/olga-mobile@2x.jpg 2x">
+
                             <img class="team__img" src="#" alt="член нашей команды">
                         </picture>
                         
@@ -314,7 +321,20 @@
                     </li>
 
                     <li class="team__item">
-                        <img class="team__img" src="./images/teams/nikolay.jpg" alt="член нашей команды" width="270" height="260">
+
+                        <picture>
+                            <source media="(min-width:1200px)" srcset="./images/teams/nikolay-desktop.webp 1x, ./images/teams/nikolay-desktop@2x.webp 2x, ./images/teams/nikolay-desktop@3x.webp 3x" type="image/webp">
+                            <source media="(min-width:1200px)" srcset="./images/teams/nikolay-desktop.jpg 1x, ./images/teams/nikolay-desktop@2x.jpg 2x, ./images/teams/nikolay-desktop@3x.jpg 3x">
+
+                            <source media="(min-width:768px)" srcset="./images/teams/nikolay-tablet.webp 1x, ./images/teams/nikolay-tablet@2x.webp 2x" type="image/webp">
+                            <source media="(min-width:768px)" srcset="./images/teams/nikolay-tablet.jpg 1x, ./images/teams/nikolay-tablet@2x.jpg 2x">
+
+                            <source media="(max-width:767px)" srcset="./images/teams/nikolay-mobile.webp 1x, ./images/teams/nikolay-mobile@2x.webp 2x" type="image/webp">
+                            <source media="(max-width:767px)" srcset="./images/teams/nikolay-mobile.jpg 1x, ./images/teams/nikolay-mobile@2x.jpg 2x">
+                        
+                            <img class="team__img" src="#" alt="член нашей команды">
+                        </picture>
+                        
                         <div class="team__container">
                             <h3 class="team__subtitle">Николай Тарасов</h3>
                             <p class="team__description" lang="en">Marketing</p>
@@ -356,7 +376,20 @@
                     </li>
 
                     <li class="team__item">
-                        <img class="team__img" src="./images/teams/mihail.jpg" alt="член нашей команды" width="270" height="260">
+
+                        <picture>
+                            <source media="(min-width:1200px)" srcset="./images/teams/myhail-desktop.webp 1x, ./images/teams/myhail-desktop@2x.webp 2x, ./images/teams/myhail-desktop@3x.webp 3x" type="image/webp">
+                            <source media="(min-width:1200px)" srcset="./images/teams/myhail-desktop.jpg 1x, ./images/teams/myhail-desktop@2x.jpg 2x, ./images/teams/myhail-desktop@3x.jpg 3x">
+
+                            <source media="(min-width:768px)" srcset="./images/teams/myhail-tablet.webp 1x, ./images/teams/myhail-tablet@2x.webp 2x" type="image/webp">
+                            <source media="(min-width:768px)" srcset="./images/teams/myhail-tablet.jpg 1x, ./images/teams/myhail-tablet@2x.jpg 2x">
+
+                            <source media="(max-width:767px)" srcset="./images/teams/myhail-mobile.webp 1x, ./images/teams/myhail-mobile@2x.webp 2x" type="image/webp">
+                            <source media="(max-width:767px)" srcset="./images/teams/myhail-mobile.jpg 1x, ./images/teams/myhail-mobile@2x.jpg 2x">
+                        
+                            <img class="team__img" src="#" alt="член нашей команды">
+                        </picture>
+                
                         <div class="team__container">   
                             <h3 class="team__subtitle">Михаил Ермаков</h3>
                             <p class="team__description" lang="en">UI Designer</p>
@@ -401,7 +434,7 @@
         </section>
 
         <!-- SECTION 4 -->
-        <!-- <section class="clients container section">
+        <section class="clients container section">
             <h2 class="title">Постоянные клиенты</h2>
             <ul class="clients__list list">
                 <li class="clients__item">
@@ -453,10 +486,10 @@
                 </li>
             </ul>
         </section>
-    </main> -->
+    </main>
 
     <!-- FOOTER -->
-    <!-- <footer class="footer">
+    <footer class="footer">
         <div class="footer__container container">
             <div class="footer__container_left">
                 <a class="footer__logo logo link" lang="en" href="./index.html">
@@ -515,6 +548,7 @@
                 </ul>
             </div>
 
+
             <form class="footer__form" action="#" name="mailing">
                 <p class="footer__join">Подпишитесь на рассылку</p>
                 <div class="footer__wrapper">
@@ -528,7 +562,7 @@
                 </button>
             </form>
         </div>
-    </footer> -->
+    </footer>
 
     <!-- MODAL WINDOW -->
     <!-- <div class="backdrop is-hidden" data-modal>
