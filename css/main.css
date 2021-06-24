@@ -116,9 +116,7 @@ img {
   .mobile-menu__btn {
     position: absolute;
     top: 10px;
-    right: 0;
-    width: 40px;
-    height: 40px;
+    right: 15px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -131,6 +129,10 @@ img {
   }
   .mobile-menu__btn:hover, .mobile-menu__btn:focus {
     fill: var(--accent-color);
+  }
+  .mobile-menu__icon {
+    width: 40px;
+    height: 40px;
   }
   .mobile-menu__nav-item {
     font-weight: 500;
@@ -146,6 +148,39 @@ img {
   }
   .mobile-menu__nav-link:hover, .mobile-menu__nav-link:focus {
     color: var(--accent-color);
+  }
+  .mobile-menu__tell {
+    font-weight: 500;
+    font-size: 34px;
+    line-height: 1.17;
+    letter-spacing: 0.02em;
+  }
+  .mobile-menu__maill {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 1.16;
+    letter-spacing: 0.02em;
+  }
+  .mobile-menu__link {
+    color: #757575;
+  }
+  .mobile-menu__link:hover, .mobile-menu__link:focus {
+    color: #2196F3;
+  }
+  .mobile-menu__social {
+    display: flex;
+  }
+  .mobile-menu__social-item {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.22;
+    letter-spacing: 0.02em;
+  }
+  .mobile-menu__social-item:not(:last-child) {
+    margin-right: 10px;
+  }
+  .mobile-menu__social-link {
+    color: #2196F3;
   }
 }
 
@@ -280,12 +315,18 @@ img {
 }
 
 .title {
-  margin-bottom: 50px;
+  margin-bottom: 30px;
   font-size: 36px;
   line-height: 1.16;
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--title-text-color);
+}
+
+@media screen and (min-width: 1199px) {
+  .title {
+    margin-bottom: 50px;
+  }
 }
 
 .social-list {
@@ -638,25 +679,64 @@ img {
 
 .hero {
   background-color: #C4C4C4;
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/bg-image.jpg);
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(/images/hero/bg-mobile.jpg);
+  background-position: center;
   background-size: cover;
   margin-right: auto;
   margin-left: auto;
-  max-width: 1600px;
-  padding-top: 200px;
-  padding-bottom: 200px;
+  padding-top: 118px;
+  padding-bottom: 118px;
   text-align: center;
 }
 
+@media (min-device-pixel-ratio: 2) and (max-width: 767px), (-webkit-min-device-pixel-ratio: 2) and (max-width: 767px), (min-resolution: 192dpi) and (max-width: 767px), (min-resolution: 2dppx) and (max-width: 767px) {
+  .hero {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/bg-mobile@2x.jpg);
+  }
+}
+
 .hero__title {
-  margin-top: 0;
   margin-bottom: 30px;
   font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
+  font-size: 26px;
+  line-height: 1.61;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: #FFFFFF;
+}
+
+@media screen and (min-width: 768px) {
+  .hero {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/bg-tablet.jpg);
+  }
+}
+
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2) and (max-width: 1199px), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2) and (max-width: 1199px), screen and (min-width: 768px) and (min-resolution: 192dpi) and (max-width: 1199px), screen and (min-width: 768px) and (min-resolution: 2dppx) and (max-width: 1199px) {
+  .hero {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/bg-tablet@2x.jpg);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .hero {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/bg-desktop.jpg);
+    max-width: 1600px;
+    padding-top: 200px;
+    padding-bottom: 200px;
+  }
+}
+
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2) and (max-width: 1600px), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2) and (max-width: 1600px), screen and (min-width: 1200px) and (min-resolution: 192dpi) and (max-width: 1600px), screen and (min-width: 1200px) and (min-resolution: 2dppx) and (max-width: 1600px) {
+  .hero {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/bg-desktop@2x.jpg);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .hero__title {
+    font-size: 44px;
+    line-height: 1.36;
+  }
 }
 
 .features__container {
@@ -754,19 +834,9 @@ img {
   background-color: #F5F4FA;
 }
 
-.team__list {
-  display: flex;
-  margin-top: -30px;
-  margin-left: -30px;
-}
-
-.team__item {
-  margin-top: 30px;
-  margin-left: 30px;
-}
-
 .team__container {
   padding: 30px 32px;
+  width: 450px;
   background: #FFFFFF;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
