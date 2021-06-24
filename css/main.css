@@ -373,6 +373,13 @@ img {
   transition: opacity var(--transition-duration) var(--transition-timing-function), visibility var(--transition-duration) var(--transition-timing-function);
 }
 
+@media screen and (max-width: 479px) {
+  .backdrop {
+    padding: 93px 15px;
+    overflow-y: scroll;
+  }
+}
+
 .is-hidden {
   opacity: 0;
   visibility: hidden;
@@ -380,21 +387,32 @@ img {
 }
 
 .modal-window {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 528px;
-  height: 581px;
+  position: relative;
   padding: 40px;
-  transform: translate(-50%, -50%) scale(1);
-  transition: transform var(--transition-duration) var(--transition-timing-function);
   border-radius: 4px;
   background-color: #ffffff;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
 }
 
-.backdrop.is-hidden .modal-window {
-  transform: translate(-50%, -50%) scale(0.5);
+@media screen and (min-width: 480px) {
+  .modal-window {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 450px;
+    height: 609px;
+    transform: translate(-50%, -50%);
+  }
+  .backdrop.is-hidden .modal-window {
+    transform: translate(-50%, -50%);
+  }
+}
+
+@media screen and (min-width: 1199px) {
+  .modal-window {
+    width: 528px;
+    height: 581px;
+  }
 }
 
 .modal-window__close-btn {
