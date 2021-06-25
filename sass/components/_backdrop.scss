@@ -9,7 +9,7 @@
     background: rgba(0, 0, 0, 0.2);
     transition: opacity var(--transition-duration) var(--transition-timing-function), visibility var(--transition-duration) var(--transition-timing-function);
 
-    @media screen and (max-width:479px) {
+    @media screen and (max-width:599px) {
         padding: 93px 15px;
         overflow-y: scroll;
     }
